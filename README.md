@@ -93,5 +93,7 @@ output : Challenge
 ```
 # Run locally
 Clone repo
--```https://github.com/mua-wallace/Dev-Exercises.git ```
+
+```https://github.com/mua-wallace/Dev-Exercises.git ```
+
 -```cd Dev-Exercises ```
