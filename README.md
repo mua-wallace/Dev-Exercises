@@ -2,7 +2,7 @@
 This repository content dev-challenging Exercises  I have COMPLETED
 ### Below are challenges:
 
-## Cube Root of a number:
+1. ## Cube Root of a number:
 A cube root of a number x is a number y such that y\*y\*y = x.
 Example: 2 × 2 × 2 = 8, so the cube root of 8 is 2.
 
