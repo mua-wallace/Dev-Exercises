@@ -32,6 +32,12 @@ string = "ab c  d e fgh i  j kl mn  opqr  stuvwxyz"
 result = "abcdefghijklmnopqrstuvwxyz"
 ```
 
+# Run locally
+Clone repo
+```https://github.com/mua-wallace/Dev-Exercises.git ```
+```cd Dev-Exercises ```
+
+
 
 3. ## Lab Number
 A lab number is a number such that the square of any of its prime divisors is still one of its divisors.
