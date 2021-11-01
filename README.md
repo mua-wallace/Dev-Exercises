@@ -21,7 +21,7 @@ Output: 1.2599
 ```
 
 
-## Spaces-from-String:
+2 ## Spaces-from-String:
 In this challenge, user can remove space between a sentence.
 
 Given a string as input, output it without spaces.
@@ -33,7 +33,7 @@ result = "abcdefghijklmnopqrstuvwxyz"
 ```
 
 
-## Lab Number
+3. ## Lab Number
 A lab number is a number such that the square of any of its prime divisors is still one of its divisors.
 
 ```
@@ -46,7 +46,7 @@ Output: true (5 is a prime divisor of 50, and 5x5=25 is also a divisor of 50)
 ```
 Write a program to check if the user input is a Lab number or not.
 
-## password-validator
+4. ## password-validator
 Password validator is a program that validates passwords to match specific rules. For example, the minimum length of the password must be eight characters long and it should have at least one uppercase letter in it. 
 
 A valid password is the one that conforms to the following rules:
@@ -73,7 +73,7 @@ Write a program to checks if the user input is a valid password or not.
 
 
 
-## Scoring Points
+5. ## Scoring Points
 Give a variable number of words, create a program to output the word with the maximum score, based on the following scoring system:
 The score of a word is calculated based on its character values, according to this table:
 e, a, i, o, n, r, t, l, s, u are equal 1 point
