@@ -103,3 +103,6 @@ Open with Dev-Exercises folder with any code editor of your choice
 Your can now reveal your web pages by opening each subfolder and opening the ```index.html``` of each  subfolder with any browser of your choice ``` chrome, FireFox, Safari  etc ```
 ### Bravooooooo!!!
 
+# Contributors
+![](https://avatars.githubusercontent.com/u/60385803?s=60&v=4)   
+Made with [Contributor-img](https://github.com/mua-wallace)
