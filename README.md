@@ -96,4 +96,9 @@ Clone repo
 
 ```https://github.com/mua-wallace/Dev-Exercises.git ```
 
--```cd Dev-Exercises ```
+```cd Dev-Exercises ```
+
+Open with Dev-Exercises folder with any code editor of your choice 
+``` vs-code, sublime, atom etc ```
+
+
