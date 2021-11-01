@@ -100,5 +100,6 @@ Clone repo
 
 Open with Dev-Exercises folder with any code editor of your choice 
 ``` vs-code, sublime, atom etc ```
-
+Your can now reveal your web pages by opening each subfolder and opening the ```index.html``` of each  subfolder with any browser of your choice ``` chrome, FireFox, Safari  etc ```
+### Bravooooooo!!!
 
