@@ -105,4 +105,4 @@ Your can now reveal your web pages by opening each subfolder and opening the ```
 
 # Contributors
 ![](https://avatars.githubusercontent.com/u/60385803?s=60&v=4)   
-Made with [Contributor-img](https://github.com/mua-wallace)
+Made with [Contributor](https://github.com/mua-wallace)
