@@ -21,7 +21,7 @@ Output: 1.2599
 ```
 
 
-2 ## Spaces-from-String:
+2. ## Spaces-from-String:
 In this challenge, user can remove space between a sentence.
 
 Given a string as input, output it without spaces.
