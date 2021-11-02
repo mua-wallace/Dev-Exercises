@@ -9,8 +9,8 @@ function squareRoot(number)
 		// variable to store the answer
 		let ans = 0.0;
 
-		// for computing integral part
-		// of square root of number
+		/* for computing integral part
+		 of square root of number */
 		while (start <= end)
 		{
 			mid = (start + end) / 2;
@@ -21,8 +21,8 @@ function squareRoot(number)
 				break;
 			}
 
-			// incrementing start if integral
-			// part lies on right side of the mid
+			/* incrementing start if integral
+			 part lies on right side of the mid */
 			if (mid * mid * mid < number) {
 				start = mid + 1;
 				ans = mid;

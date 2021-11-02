@@ -1,58 +1,60 @@
-const scrabble = () => {
-    var str = $("#ipText").val();
-    let ar = str.split(" ");
-    let points = [], sum = 0, newAr = [];
-
-    let onepointer = ["a", "e", "i", "o", "u", "n", "r", "t", "l", "s", "A", "E", "I", "O", "U", "N", "R", "T", "L", "S"];
-    let twopointer = ["d", "g", "D", "G"];
-    let threepointer = ["b", "c", "m", "p", "B", "C", "M", "P"];
-    let fourpointer = ["f", "h", "v", "w", "y", "F", "H", "V", "W", "Y"];
-    let fivepointer = ["k", "K"];
-    let eightpointer = ["j", "x", "J", "X"];
-    let tenpointer = ["q", "z", "Q", "Z"];
-
-    for(let i=0; i<ar.length; i++){        
-        for(let j =0; j< ar[i].length; j++){            
-            newAr = ar[i].split(""); 
-            sum = 0;
-            for(let k =0; k<newAr.length; k++){
-                if(onepointer.indexOf(newAr[k]) !== -1){
-                    sum = sum + 1;
-                }
-                else if(twopointer.indexOf(newAr[k]) !== -1){
-                    sum = sum + 2;
-                } 
-                else if(threepointer.indexOf(newAr[k]) !== -1){
-                    sum = sum + 3;
-                }
-                else if(fourpointer.indexOf(newAr[k]) !== -1){
-                    sum = sum + 4;
-                }
-                else if(fivepointer.indexOf(newAr[k]) !== -1){
-                    sum = sum + 5;
-                }
-                else if(eightpointer.indexOf(newAr[k]) !== -1){
-                    sum = sum + 8;
-                }
-                else if(tenpointer.indexOf(newAr[k]) !== -1){
-                    sum = sum + 10;
-                }
-                else{
-                    sum = 0;
-                }
-            }            
-        } 
-        points.push(sum);               
+let allArr = [
+    onepointer = {
+        points: 1,
+        arr: ["a", "e", "i", "o", "u", "n", "r", "t", "l", "s"]
+    },
+    twopointer = {
+        points: 2,
+        arr: ["d", "g"]
+    },
+    threepointer = {
+        points: 3,
+        arr: ["b", "c", "m", "p"]
+    },
+    fourpointer = {
+        points: 4,
+        arr: ["f", "h", "v", "w", "y"]
+    },
+    fivepointer = {
+        points: 5,
+        arr: ["k"]
+    },
+    eightpointer = {
+        points: 8,
+        arr: ["j", "x"]
+    },
+    tenpointer = {
+        points: 10,
+        arr: ["q", "z"]
     }
+];
 
-    let sortArray = points.slice().sort(function(a, b){
-        return b-a;
+// function to calculate the points of a string 
+const pointCounter = (str) => {
+    let ar = str.toLowerCase().split("");
+    var totalPoints = 0;
+    allArr.forEach(arr => {
+        ar.forEach(letter => {
+           if(arr.arr.includes(letter)) {
+               totalPoints += arr.points;
+           } 
+        })
     });
-
-    let index = points.indexOf(sortArray[0]);
-    $("#opText").text(ar[index]);
+    return totalPoints;
 }
 
+const scrabble = () => {
+    var str = $("#ipText").val().split(" ");
+    var answer = '';
+    let currentPoint = 0;
+    str.forEach(word => {
+        if (pointCounter(word) > currentPoint) {
+            currentPoint = pointCounter(word);
+            answer = word;
+        }
+    })
+    document.getElementById('opText').innerHTML = answer;
+};
 function clearFields(){
     document.getElementById('ipText').value = "";
     document.getElementById('opText').innerHTML = "";
