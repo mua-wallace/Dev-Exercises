@@ -91,6 +91,34 @@ input { "This",  "is", "a", "cool" , "Challenge" }
 output : Challenge
 
 ```
+
+6. ## Collatz Conjecture
+The Collatz conjecture (also known as the Ulam conjecture or the Syracuse problem) is an unsolved mathematical problem, which is very easy to formulate:
+* Take any natural number
+* If it's even, half it, otherwise triple it and add one
+* Repeat step 2. until you reach 4, 2, 1 sequence
+* You will ALWAYS reach 1, eventually. Example
+
+
+```
+x = 17
+17 * 3 + 1 = 52
+52 / 2 = 26
+26 / 2 = 13
+13 * 3 + 1 = 40
+40 / 2 = 20
+20 / 2 = 10
+10 / 2 = 5
+5 * 3 + 1 = 16
+16 / 2 = 8
+8 / 2 = 4
+4 / 2 = 2
+2 / 2 = 1
+1 * 3 + 1 = 4
+...
+
+
+```
 # Run locally
 Clone repo
 
