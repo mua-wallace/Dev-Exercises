@@ -1,39 +1,5 @@
-let allArr = [
-    onepointer = {
-        points: 1,
-        arr: ["a", "e", "i", "o", "u", "n", "r", "t", "l", "s"]
-    },
-    twopointer = {
-        points: 2,
-        arr: ["d", "g"]
-    },
-    threepointer = {
-        points: 3,
-        arr: ["b", "c", "m", "p"]
-    },
-    fourpointer = {
-        points: 4,
-        arr: ["f", "h", "v", "w", "y"]
-    },
-    fivepointer = {
-        points: 5,
-        arr: ["k"]
-    },
-    eightpointer = {
-        points: 8,
-        arr: ["j", "x"]
-    },
-    tenpointer = {
-        points: 10,
-        arr: ["q", "z"]
-    }
-
-
-];
-
 
 var map = {
-
     a : 1, e : 1, i: 1, o: 1, u: 1 , n: 1, r: 1 , t: 1 , l: 1 , s: 1,
     q: 10, z: 10,
     j: 8, x: 8,
@@ -41,8 +7,6 @@ var map = {
     f: 4, h: 4 , v:4, w: 4, y: 4,
     b: 3, c: 3 , m: 3 , p: 3,
     d: 2, g: 2
-
-
 }
 
 // function to calculate the points of a string 
