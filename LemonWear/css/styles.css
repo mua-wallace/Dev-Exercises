@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.con {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+header .con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .con nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 2em;
+}
+header .con nav ul {
+    display: flex;
+    align-items: center;
+}
+ ul li {
+   text-decoration: none;
+   list-style: none;
+   padding: 20px;
+   align-items: center;
+}
+li:focus {
+    outline: 3em solid green;
+    outline-offset: 3px;
+}
+a:link {
+    text-decoration: none;
+}
